@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Photo View | Seu Visualizador de Fotos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header>
+		<nav class="navbar navbar-default container-fluid navbar-fixed-top">
+			<div class="navbar-header">
+				<span class="navbar-brand">Photo View</span>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#settings">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="settings" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+					<li><a href="#">Option 6</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h1>Bem Vindo ao Visualizador de Imagens!</h1>
+	</header>
+	<section id="images-list" class="row container">
+		<!-- Local onde os containers de imagens serão inseridos -->
+	</section>
+	
+	<!-- Lightbox que mostra as imagens ampliadas -->
+	<div id="lightbox" style="display: none;">
+		<span id="icon-remove"><span class="glyphicon glyphicon-remove"></span></span>
+		<!-- Container da imagem -->
+		<div id="lb-container"></div>
+	</div>
+	
+	<!-- Pedaço de HTML que serve como o container das imagens -->
+	<div class="img-container col-xs-12 col-sm-4 col-md-4 col-lg-3" style="display: none;">
+		<a href="#" class="thumbnail"><div class="image"></div></a>
+		<h3><!-- Nome da imagem --></h3>
+		<p><!-- Descrição da imagem --></p>
+	</div>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jscript.js"></script>
+</body>
+</html>
