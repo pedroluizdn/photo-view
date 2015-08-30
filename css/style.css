@@ -3,6 +3,55 @@
 	padding: 0;
 }
 
+body {
+	padding: 0;
+}
+
+#navbar {
+	background: black;
+}
+
+
+#navbar a:link {
+	color: white;
+}
+
+#navbar a:visited {
+	color: white;
+}
+
+#navbar a:hover {
+	color: red;
+}
+
+#desc-h1 {
+	font-size: 0.4em;
+	color: rgb(255,100,100);
+}
+
+footer h4 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+footer h4, p.foot-para {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 74em) {
+
+#settings {
+	margin-right: 8em;
+}
+
+p.foot-para {
+	padding: 0 10em 1em;
+}
+
+}
+
 header h1, #images-list {
 	width: 80%;
 	margin: 2em 10% 0;
@@ -19,6 +68,11 @@ img {
 
 .img-container image:hover {
 	border-color: red;
+}
+
+footer {
+	color: white;
+	background: black;
 }
 
 #lightbox {

@@ -14,9 +14,9 @@
 <body>
 	
 	<header>
-		<nav class="navbar navbar-default container-fluid navbar-fixed-top">
+		<nav id="navbar" class="navbar navbar-default container-fluid navbar-fixed-top">
 			<div class="navbar-header">
-				<span class="navbar-brand">Photo View</span>
+				<a href="#" class="navbar-brand">Photo View</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#settings">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -25,7 +25,7 @@
 				</button>
 			</div>
 			<div id="settings" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Option 1</a></li>
 					<li><a href="#">Option 2</a></li>
 					<li><a href="#">Option 3</a></li>
@@ -35,12 +35,27 @@
 				</ul>
 			</div>
 		</nav>
-		<h1>Bem Vindo ao Visualizador de Imagens!</h1>
+		<h1>Bem Vindo ao Visualizador de Imagens!
+		<small id="desc-h1">Clique nas fotos para visualizar em maior tamanho</small></h1>
 	</header>
 	<section id="images-list" class="row container">
 		<!-- Local onde os containers de imagens serão inseridos -->
 	</section>
-	
+	<footer>
+		<h4 class="container">Photo View - Responsive Test</h4>
+		<p class="container foot-para">Lorem ipsum dolor sit amet, at mel solet affert ubique, 
+		vis ut dicam tantas ponderum. Has et dolorum dissentiunt, 
+		ut dolore consetetur mea. Tempor cetero eu sit, an est dicant 
+		copiosae volutpat. Ad vel habeo mazim deseruisse. 
+		Ex vim nulla oblique forensibus.</p>
+		<p class="container foot-para">Te mea fabulas necessitatibus, cum in putent iuvaret sapientem. 
+		Eum te omnis nostro, est no amet patrioque. Vel in labore laoreet 
+		consectetuer. Mel munere graece theophrastus ei. Eius blandit 
+		philosophia at per, meliore appareat inimicus ex usu, eripuit 
+		fastidii definitiones ei his. Delicata deseruisse accommodare 
+		et pri, solet fabulas voluptatibus cum cu. 
+		In sit facete corpora scaevola.</p>
+	</footer>
 	<!-- Lightbox que mostra as imagens ampliadas -->
 	<div id="lightbox" style="display: none;">
 		<span id="icon-remove"><span class="glyphicon glyphicon-remove"></span></span>
@@ -49,7 +64,7 @@
 	</div>
 	
 	<!-- Pedaço de HTML que serve como o container das imagens -->
-	<div class="img-container col-xs-12 col-sm-4 col-md-4 col-lg-3" style="display: none;">
+	<div class="img-container col-xs-12 col-sm-4 col-lg-3" style="display: none;">
 		<a href="#" class="thumbnail"><div class="image"></div></a>
 		<h3><!-- Nome da imagem --></h3>
 		<p><!-- Descrição da imagem --></p>
